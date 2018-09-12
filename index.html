@@ -42,7 +42,7 @@
 
 
     </head>
-    <body>
+    <body ng-app="FAC">
 
         <div class="boxed">
             <!-- Preloader -->
@@ -484,43 +484,87 @@
                             </div>
                         </div><!-- /.row -->
 
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <!--                                <div class="info info-address">
-                                                                    <div class="title">
-                                Address
-                                </div>
-                                                                    <p>PO Box 16122 Collins Street West,Victoria 8007<br>
-                                Australia
+                        <div class="row" ng-controller="preciosCtrl">
+                            <div class="form-group col-xs-12 col-sm-3 contact-info">
+                                ¿Cuántos timbres necesita?.
+                                <p>
+                                    Compra mínima <b>{{chartPriceParams.compra_minima|number}}</b> timbres.
                                 </p>
-                                                                </div>-->
+                                <form ng-submit="false" name="formTimbres" novalidate>
+                                    <div ng-class="alertDangerClass(formTimbres, formTimbres.timbres)">
+                                        <label class="control-label" for="timbres">Cantidad:</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn btn-danger" ng-click="updateTimbres( - 1 * timbresStep)">
+                                                <i class="fa fa-minus-circle"></i></span>
+                                            <input type="number" class="form-control" 
+                                                   ng-model-options="{debounce: 200}"
+                                                   required="required" 
+                                                   ng-model="paquete.cantidad" 
+                                                   id="timbres"
+                                                   min="{{chartPriceParams.compra_minima}}"
+                                                   name="timbres"
+                                                   autocomplete="off"
+                                                   ng-change="updateChart()"
+                                                   placeholder="Cantidad">
+                                                <span class="input-group-addon btn btn-success" ng-click="updateTimbres(timbresStep)">
+                                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                </span>
 
-                                <div class="info info-address">
-                                    <div class="title">Precios accesibles</div>
-                                    <p>Cuanto más compres, más barato será.</p>
-                                    <a href="https://app.facturabilidad.com/timbres/comprar" target="_blank" class="btn btn-success">
-                                        Comprar timbres
-                                    </a>
-                                </div>
+                                        </div>
+                                        <div ng-show="formTimbres.$submitted || formTimbres.timbres.$touched" class="control-label">
+                                            <span ng-show="formTimbres.timbres.$error.required">Este campo es obligatorio.</span>
+                                            <span ng-show="formTimbres.timbres.$error.min">La compra minima es de <b>{{chartPriceParams.compra_minima}}</b> timbres.</span>
+                                        </div>
+                                    </div>
+                                    <br/>
 
+                                    <div class="alert alert-success" role="alert" ng-show="formTimbres.timbres.$valid">
+                                        Subtotal: <b>{{total| currency:"$"}} MXN</b>
+                                        <br/>
+                                        IVA: <b>{{total * .16| currency:"$"}} MXN</b>
+                                        <br/>
+                                        Total a pagar:
+                                        <h2>
+                                            {{total * 1.16| currency:"$"}} MXN
+                                        </h2>
+                                    </div>
+
+                                </form>
+
+                                <a href="https://app.facturabilidad.com/timbres/comprar" target="_blank" class="btn btn-success">
+                                    Comprar timbres
+                                </a>
+                                <br/>
+                                <br/>
                                 <div class="info info-address">
                                     <div class="title">Timbres Gratis</div>
-                                    <p>Recomienda la plataforma a tus conocidos y obtendrás timbres gratis cuando ellos usen sus timbres.</p>
+                                    <p>Recomienda la plataforma a tus conocidos 
+                                        y obtendrás timbres gratis cuando ellos usen sus timbres.</p>
 
                                     <a href="https://app.facturabilidad.com/timbres/gratis" target="_blank" class="btn btn-success">
                                         Recomendar
                                     </a>
                                 </div>
                             </div>
-
-
-                        </div> <!-- /.col-md-4 -->
-
-                        <div class="col-md-8">
-                            <div class="flat-form-info">
-                                <img alt="grafica" src="images/precios.png" style="width: 100%;"/>
+                            <div class="form-group col-xs-12 col-sm-8">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        Timbres:<b>{{(paquete.cantidad||0).toLocaleString()}}</b>; 
+                                        Precio por timbre:<b>{{precioPorVolumen(paquete.cantidad) | currency:"MXN $"}}</b>
+                                    </div>
+                                    <div class="panel-body">
+                                        <canvas class="chart chart-bar" chart-data="chartData"
+                                                chart-labels="chartLabels"
+                                                chart-series="chartSeries" 
+                                                chart-options="chartOptions"
+                                                chart-dataset-override="datasetOverride"
+                                                chart-colors="chartColors"
+                                                chart-click="chartOnClick">
+                                        </canvas>
+                                    </div>
+                                </div>
                             </div>
-                        </div> <!-- /.col-md-8 -->
+                        </div>
 
                     </div><!-- /.row -->
                 </div><!-- /.container -->
@@ -707,17 +751,23 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 
+        <script type="text/javascript" src="bower_components/angular/angular.js?v=1.0.3"></script>
+        <script type="text/javascript" src="bower_components/chart.js/dist/Chart.min.js?v=1.0.3"></script>
+        <script type="text/javascript" src="bower_components/angular-chart.js/dist/angular-chart.min.js?v=1.0.3"></script>
+        <script type="text/javascript" src="javascript/ng/ngApp.js?v=1.0.3"></script>
+        <script type="text/javascript" src="javascript/ng/preciosCtrl.js?v=1.0.3"></script>
+
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
-                                                    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-                                                    (function () {
-                                                        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                                                        s1.async = true;
-                                                        s1.src = 'https://embed.tawk.to/5890f57d9bfea509f7d18f00/default';
-                                                        s1.charset = 'UTF-8';
-                                                        s1.setAttribute('crossorigin', '*');
-                                                        s0.parentNode.insertBefore(s1, s0);
-                                                    })();
+                                            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                                            (function () {
+                                            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                                            s1.async = true;
+                                            s1.src = 'https://embed.tawk.to/5890f57d9bfea509f7d18f00/default';
+                                            s1.charset = 'UTF-8';
+                                            s1.setAttribute('crossorigin', '*');
+                                            s0.parentNode.insertBefore(s1, s0);
+                                            })();
         </script>
         <!--End of Tawk.to Script-->
 
