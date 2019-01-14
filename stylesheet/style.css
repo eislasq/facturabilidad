@@ -3567,3 +3567,15 @@ article.post .content-post {
 .sw-odd .sw-image .sw-buy:hover {
     background: #2e363a;
 }
+
+#wa{
+    position: fixed;
+    right: 60px;
+    bottom: 0px;
+    background-color: #5cb85c;
+    padding: 5px 15px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
