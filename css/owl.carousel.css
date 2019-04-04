@@ -39,11 +39,11 @@
 	
 .owl-carousel .owl-item{
     float: left;
-    cursor: url("../images/icon-move.png"), move;
+    /*cursor: url("../images/icon-move.png"), move;*/
 }
 .owl-carousel.light-pagination .owl-item{
 	float: left;
-        cursor: url("../images/icon-move-light.png"), move;
+        /*cursor: url("../images/icon-move-light.png"), move;*/
 }
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
