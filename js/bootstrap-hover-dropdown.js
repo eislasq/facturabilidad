@@ -9,7 +9,7 @@
  *
  * License: MIT
  *
- * http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
+ * //cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
  */
 "use strict";
 var isTouchDevice = "ontouchstart" in window || navigator.msMaxTouchPoints;
