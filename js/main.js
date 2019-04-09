@@ -181,7 +181,7 @@ $(document).ready(function () {
         $portfolio_selectors.parent().removeClass('active');
         $(this).parent().addClass('active');
         var selector = $(this).attr('data-filter');
-        $portfolio.isotope({filter: selector});
+            $portfolio.isotope({filter: selector});
        
         if (selector.substr(1)!="" && selector.substr(1)!="#")
         {
