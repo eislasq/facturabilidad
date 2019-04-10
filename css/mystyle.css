@@ -1,0 +1,36 @@
+.opacity-header {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    max-width: 188px; 
+}
+
+.bg-deep-red {
+    background: #132235 !important;
+}
+
+.deep-red-text {
+    color: #132235 !important;
+}
+
+.highlight-link {
+    
+    background: #132235;
+}
+
+p {
+    margin: 0 0 20px;
+    color: black;
+}
+
+footer .footer-middle {
+    padding-top: 0px;
+    padding-bottom: 45px;
+}
