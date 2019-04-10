@@ -1,854 +1,467 @@
-<!DOCTYPE html>
-<!--[if IE 8 ]>
-<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="en">
     <head>
-        <!-- Basic Page Needs -->
-        <meta charset="UTF-8"/>
-        <meta name="theme-color" content="#1e2a39">
-            <!--[if IE]>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-            <title>Facturabilidad</title>
-
-            <meta name="author" content="themsflat.com"/>
-
-            <!-- Mobile Specific Metas -->
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-            <!-- Boostrap style -->
-            <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css"/>
-
-            <!-- REVOLUTION LAYERS STYLES -->
-            <link rel="stylesheet" type="text/css" href="revolution/css/layers.css"/>
-            <link rel="stylesheet" type="text/css" href="revolution/css/settings.css"/>
-
-            <!-- Theme style -->
-            <link rel="stylesheet" type="text/css" href="stylesheet/style.css"/>
-
-            <!-- Colors -->
-            <link rel="stylesheet" type="text/css" href="stylesheet/colors/color1.css" id="colors"/> 
-
-            <!-- Reponsive -->
-            <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css"/>
-
-            <!-- Animation Style -->
-            <link rel="stylesheet" type="text/css" href="stylesheet/animate.css"/>
-
-            <!-- Favicon and touch icons  -->
-            <link href="images/favicon.png" rel="apple-touch-icon-precomposed"/>
-            <link href="images/favicon.png" rel="apple-touch-icon-precomposed"/>
-            <link href="images/favicon.png" rel="shortcut icon"/>
-
-
-
+        <title>Facturabilidad | Facturación rapida y agíl</title>
+        <meta name="description" content="Landing Page de portal de facturación">
+        <meta name="keywords" content="">
+        <meta charset="utf-8">
+        <meta name="author" content="ZombIT">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     </head>
-    <body ng-app="FAC">
+    <body class="ss_scrollable scrollable" ng-app="FAC">
+        <!-- navigation panel -->
+        <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-white nav-border-bottom" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-md-2 pull-left">
+                        <a class="logo-light" href="#"><img alt="" src="img/logo.webp" class="logo" /></a>
+                        <a class="logo-dark" href="#"><img alt="" src="img/logo2.webp" class="logo" /></a>
+                    </div>
+                    <!-- end logo -->
 
-        <div class="boxed">
-            <!-- Preloader -->
-            <!--            <div class="preloader">
-                            <div class="clear-loading loading-effect-2">
-                                <span>
-                                </span>
-                            </div>
-                        </div>-->
+                    <!-- toggle navigation -->
+                    <div class="navbar-header col-sm-8 col-xs-2 pull-right">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+                    <!-- toggle navigation end -->
+                    <!-- main menu -->
+                    <div class="col-md-8 no-padding-right accordion-menu text-right">
+                        <div class="navbar-collapse collapse">
+                            <ul id="accordion" class="nav navbar-nav navbar-right panel-group portfolio-filter">
+                                <!-- menu item -->
+                                <!--<li><a href="https://app.facturabilidad.com">Acceso</a></li>-->
+                                <li><a class="scrollto" data-filter="#slider" href="#slider">Acceso</a></li>
+                                <li><a class="scrollto" data-filter="#servicios" href="#servicios">Descripción</a></li>
+                                <li><a class="scrollto" data-filter="#servicios" href="#servicios">Descripción</a></li>
+                                <li><a class="scrollto" data-filter="#experiencia" href="#experiencia">Experiencia</a></li>
+                                <li><a class="scrollto" data-filter="#precios" href="#precios">Precios</a></li>
+                                <li><a class="scrollto" data-filter="#contact-form" href="#contact-form">Contacto</a></li>
 
-            <div class="top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="flat-infomation">
-                                <li class="phone">
-                                    Whatsapp: 
-                                    <a href="https://api.whatsapp.com/send?phone=5212225853807" target="_blank" title="Whatsapp">
-                                        <b>222 585 3807</b>
-                                    </a>
-                                </li>
-                                <li class="email">
-                                    Email: 
-                                    <a href="mailto:contacto@facturabilidad.com" target="_blank" title="email">
-                                        contacto@facturabilidad.com
-                                    </a>
-                                </li>
-                            </ul><!-- /flat-infomation -->
-                            <!--                            <div class="flat-questions">
-                                                            <a href="https://app.facturabilidad.com" title="" class="appointment">
-                                                                Acceso
-                                                            </a>
-                                                        </div> /.flat-questions -->
-                            <div class="clearfix">
-                            </div><!-- /.clearfix -->
+
+                            </ul>
                         </div>
                     </div>
+                    <!-- end main menu -->
                 </div>
-            </div><!-- /.top -->
-
-            <header id="header" class="header bg-color">
-                <div class="container">
-                    <div class="row">
-                        <div class="header-wrap">
-                            <div class="col-md-2">
-                                <div id="logo" class="logo">
-                                    <a href="#" title="">
-                                        <img src="images/logo-width-alpha.png" alt="logo Facturabilidad"/>
-                                    </a>
-                                </div><!-- /#logo -->                            
-                            </div><!-- /.col-md-2 -->
-                            <div class="col-md-10">	
-                                <!--                                <div class="flat-show-search">
-                                                                    <div class="show-search">
-                                                                        <a href="#">
-                                <i class="fa fa-search">
-</i>
-</a>                                             
-                                                                    </div>
-                                                                    <div class="top-search">                        
-                                                                        <form action="#" id="searchform-all" method="get">
-                                                                            <div>
-                                                                                <input type="text" id="s" class="sss" placeholder="Search..."/>
-                                                                                <input type="submit" value="" id="searchsubmit"/>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>  /.top-search 
-                                                                </div>	 /.flat-show-search 					-->
-                                <div class="nav-wrap">
-                                    <div class="btn-menu">
-                                        <span>
-                                        </span>
-                                    </div><!-- //mobile menu button -->								
-                                    <nav id="mainnav" class="mainnav">
-                                        <ul class="menu">
-                                            <li>
-                                                <a href="#banner-slide" onclick="$('html, body').animate({scrollTop: $('#banner-slide').offset().top}, 1000);" title="">
-                                                    Inicio  
-                                                    <i  aria-hidden="true">
-                                                    </i>
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#caracteristicas" onclick="$('html, body').animate({scrollTop: $('#caracteristicas').offset().top}, 1000);" title="">
-                                                    Características  
-                                                    <i  aria-hidden="true">
-                                                    </i>
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="#precios" onclick="$('html, body').animate({scrollTop: $('#precios').offset().top}, 1000);" title="">Precio  <i  aria-hidden="true">
-                                                    </i>
-                                                </a>
-                                            </li>
-                                            <li class="btn-success">
-                                                <a href="https://app.facturabilidad.com" title="">
-                                                    Acceso  &nbsp;&nbsp;&nbsp;&nbsp;
-                                                </a>
-                                            </li>
-
-                                        </ul><!-- /.menu -->									
-                                    </nav><!-- /#mainnav -->															
-                                </div><!-- /.nav-wrap -->
-                            </div><!-- /.col-md-9 -->
-                        </div><!-- /.header-wrap -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </header><!-- /header -->
-
-            <!-- START REVOLUTION SLIDER 5.4.2 auto mode -->
-            <div id="banner-container" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-                <!-- START REVOLUTION SLIDER 5.3.0.2 auto mode -->
-                <div id="banner-slide" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
-                    <div class="slotholder">
-                    </div>
-
-
-                    <ul><!-- SLIDE  -->
-
-                        <!--SLIDE 1--> 
-                        <!--                                                <li data-index="rs-3048" data-transition="slideremovedown"
-                                                                            data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"
-                                                                            data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                                                                            data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1=""
-                                                                            data-param2="" data-param3="" data-param4="" data-param5=""
-                                                                            data-param6="" data-param7="" data-param8="" data-param9="" 
-                                                                            data-param10="" data-description="">                        
-                                                
-                                                                             MAIN IMAGE 
-                                                                             <img src="images/promo_navidad.jpg"
-                                                                                 alt="" 
-                                                                                 data-bgposition="center center"
-                                                                                 data-kenburns="off" data-duration="3000" 
-                                                                                 data-ease="Linear.easeNone" 
-                                                                                 data-scalestart="100" 
-                                                                                 data-scaleend="100"
-                                                                                 data-rotatestart="0" data-rotateend="0"
-                                                                                 data-offsetstart="0 0" data-offsetend="0 0"
-                                                                                 data-bgparallax="10" class="rev-slidebg" data-no-retina=""/>
-                                                                        </li>-->
-                        <!-- SLIDE 3 -->
-                        <li data-index="rs-3049" 
-                            data-transition="slideremovedown"
-                            data-slotamount="7" 
-                            data-hideafterloop="0"
-                            data-hideslideonmobile="off"  
-                            data-easein="Power4.easeInOut" 
-                            data-easeout="Power4.easeInOut" 
-                            data-masterspeed="2000"
-                            data-rotate="0"
-                            data-saveperformance="off"
-                            data-title="Ken Burns"
-                            data-param1="" 
-                            data-param2=""
-                            data-param3=""
-                            data-param4=""
-                            data-param5=""
-                            data-param6=""
-                            data-param7=""
-                            data-param8=""
-                            data-param9=""
-                            data-param10=""
-                            data-description="">                        
-
-                            <!-- MAIN IMAGE -->
-                            <img src="images/finanzas.jpg"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="3000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina=""/>
-                            <!-- LAYERS -->
-
-
-
-
-                            <!-- LAYER NR. 12 -->
-                            <div class="tp-caption title-slide color-white letter-spacing3px" 
-                                 id="slide-3049-layer-1" 
-                                 data-x="['left','left','left','left']" data-hoffset="['39','39','39','39']" 
-                                 data-y="['middle','middle','middle','middle']" data-voffset="['-105','-77','-77','-77']" 
-                                 data-fontsize="['55','52','45','35']"
-                                 data-lineheight="['60','57','50','40']"
-                                 data-fontweight="['600','600','600','600']"
-                                 data-width="none"
-                                 data-height="none"
-                                 data-whitespace="nowrap"
-
-                                 data-type="text" 
-                                 data-responsive_offset="on"                             
-
-                                 data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                                 data-textAlign="['left','left','left','left']"
-                                 data-paddingtop="[10,10,10,10]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0"
-                                 data-paddingleft="[0,0,0,0]"
-
-                                 style="z-index: 16; white-space: nowrap;text-transform:left; text-shadow: 3px 3px 5px black;">
-                                Facturabilidad.com
-                            </div>
-
-                            <!-- LAYER NR. 13 -->
-                            <div class="tp-caption sub-title color-white" 
-                                 id="slide-3049-layer-4" 
-                                 data-x="['left','left','left','left']" data-hoffset="['37','37','37','37']" 
-                                 data-y="['middle','middle','middle','middle']" data-voffset="['30','30','30','0']"
-                                 data-fontsize="['20',18','18','14']" 
-                                 data-lineheight="['30','28','28','24']"
-                                 data-fontweight="['400','400','400','400']"
-                                 data-width="none"
-                                 data-height="none"
-                                 data-whitespace="nowrap"
-
-                                 data-type="text" 
-                                 data-responsive_offset="on" 
-
-                                 data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                                 data-textAlign="['left','left','left','left']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,0]"
-
-                                 style="z-index: 17; white-space: nowrap;text-transform:left;">
-
-                                <center style="background: rgba(0,0,0,.8); padding:  15px; display: inline-block;">                                
-                                    CFDI de Honorarios, Arrendamiento, Notas de crédito,
-                                    <br/>Complemento de pagos, Nómina y más.
-                                </center>
-                            </div>
-
-                            <a href="https://app.facturabilidad.com" target="_self" class="tp-caption flat-button-slider bg-blue" 
-
-                               data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-
-                               data-x="['left','left','left','left']" data-hoffset="['36','36','36','36']" 
-                               data-y="['middle','middle','middle','middle']" data-voffset="['140','140','140','80']"
-                               data-fontsize="['14','14','14','14']" 
-                               data-width="['auto']"
-                               data-height="['auto']">Acceso
-                            </a><!-- END LAYER LINK -->
-
-                            <a href="#precios" target="_self" class="tp-caption flat-button-slider bg-transparent" 
-
-                               data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-
-                               data-x="['left','left','left','left']" data-hoffset="['205','205','205','205']" 
-                               data-y="['middle','middle','middle','middle']" data-voffset="['140','140','140','80']"  
-                               data-fontsize="['14',14','14','14']"
-                               data-width="['auto']"
-                               data-height="['auto']">Precios
-                            </a><!-- END LAYER LINK -->
-                            <a href="http://demo.facturabilidad.com/pruebas" target="_self" class="tp-caption flat-button-slider bg-transparent" 
-
-                               data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-
-                               data-x="['left','left','left','left']" data-hoffset="['374','374','374','374']" 
-                               data-y="['middle','middle','middle','middle']" data-voffset="['140','140','140','80']"  
-                               data-fontsize="['14',14','14','14']"
-                               data-width="['auto']"
-                               data-height="['auto']">Demo
-                            </a><!-- END LAYER LINK -->
-                        </li>
-
-                        <!-- SLIDE 2 -->
-
-                    </ul>
-                </div>
-                <!--                <a href="https://www.elbuenfin.org/" target="_blank">
-                                    <img src="images/buen-fin-18.png" style="position: absolute; top: 0px; right: 0px; width: 5cm; z-index: 999;"/>
-                                </a>-->
-            </div><!-- END REVOLUTION SLIDER -->
-
-            <section id="caracteristicas" class="flat-row pd-imagebox">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="imagebox-item">
-                                <div class="imagebox style1">
-                                    <div class="imagebox-image">
-                                        <img src="images/small1.jpg" alt=""/>
-                                    </div><!-- /.imagebox-image -->
-
-                                    <div class="imagebox-title">
-                                        <h3>
-                                            <a href="#" title="">Catálogo de clientes</a>
-                                        </h3>
-                                    </div><!-- /.iamgebox-title -->
-                                    <div class="imagebox-content">
-                                        <div class="imagebox-desc">
-                                            Registra los datos de tus clientes una sola vez, no necesitas repetir datos, simplemente selecciona y factura.
-                                        </div>
-
-                                    </div><!-- /.imagebox-content -->
-                                </div><!-- /.imagebox -->
-                            </div><!-- /.imagebox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="imagebox-item">
-                                <div class="imagebox style1">
-                                    <div class="imagebox-image">
-                                        <img src="images/small2.jpg" alt=""/>
-                                    </div><!-- /.imagebox-image -->
-                                    <div class="imagebox-title">
-                                        <h3>
-                                            <a href="#" title="">Catálogo de productos</a>
-                                        </h3>
-                                    </div><!-- /.imagebox-title -->
-                                    <div class="imagebox-content">
-                                        <div class="imagebox-desc">
-                                            Administra facilmente tus productos y genera facturas más rapido y fácil. Ademas, tener un catálogo facilita el uso de la facturación 3.3
-                                        </div>
-
-                                    </div><!-- /.imagebox-content -->
-                                </div><!-- /.imagebox -->
-                            </div><!-- /.imagebox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="imagebox-item">
-                                <div class="imagebox style1">
-                                    <div class="imagebox-image">
-                                        <img src="images/small3.jpg" alt=""/>
-                                    </div><!-- /.imagebox-image -->
-                                    <div class="imagebox-title">
-                                        <h3>
-                                            <a href="#" title="">CFDI v3.3 </a>
-                                        </h3>
-                                    </div><!-- /.imagebox-title -->
-                                    <div class="imagebox-content">
-                                        <div class="imagebox-desc">
-                                            Cumple con las nuevas normas sin que afecte tu operación, nosotros te ayudamos a realizar la migración a la nueva forma de facturar.
-                                        </div>
-
-                                    </div><!-- /.imagebox-content -->
-                                </div><!-- /.imagebox -->
-                            </div><!-- /.imagebox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </section><!-- /.flat-row-imagebox -->
-
-            <section class="flat-row flat-iconbox bg-theme">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="title-section left">
-                                <h2>
-                                    Características
-                                </h2>
-                            </div><!-- /.title-section -->
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="iconbox-item">
-                                <div class="iconbox style1">
-                                    <div class="box-header">
-                                        <div class="icon-rounded ion-clipboard">
-
-                                        </div><!-- /.icon-rounded -->
-                                        <div class="box-title">
-                                            <a href="'#" title="">
-                                                Usabilidad
-                                            </a>
-                                        </div><!-- /.box-title -->
-                                    </div><!-- /.box-header -->
-                                    <div class="box-content">
-                                        Un diseño comodo e intuitivo, factura facil y rapido. 
-                                    </div><!-- /.box-content -->
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.iconbox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="iconbox-item">
-                                <div class="iconbox style1">
-                                    <div class="box-header">
-                                        <div class="icon-rounded line-chart">
-
-                                        </div>
-                                        <div class="box-title">
-                                            <a href="'#" title="">Timbres gratis</a>
-                                        </div>
-                                    </div><!-- /.box-header -->
-                                    <div class="box-content">
-                                        Usar gratis un timbre al mes y puedes tener más al recomendar la plataforma.
-                                    </div><!-- /.box-content -->
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.iconbox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="iconbox-item">
-                                <div class="iconbox style1">
-                                    <div class="box-header">
-                                        <div class="icon-rounded clock">
-
-                                        </div>
-                                        <div class="box-title">
-                                            <a href="'#" title="">
-                                                Soporte
-                                            </a>
-                                        </div>
-                                    </div><!-- /.box-header -->
-                                    <div class="box-content">
-                                        Siempre tendremos a alguien listo para ayudarte a resolver tus dudas.
-                                    </div><!-- /.box-content -->
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.iconbox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="height80">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="iconbox-item">
-                                <div class="iconbox style1">
-                                    <div class="box-header">
-                                        <div class="icon-rounded magic">
-
-                                        </div>
-                                        <div class="box-title">
-                                            <a href="'#" title="">
-                                                Seguridad
-                                            </a>
-                                        </div>
-                                    </div><!-- /.box-header -->
-                                    <div class="box-content">
-                                        Tu información está resgrardada con diferentes métodos de seguridad y disponible cuando la necesitas.
-                                    </div><!-- /.box-content -->
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.iconbox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="iconbox-item">
-                                <div class="iconbox style1">
-                                    <div class="box-header">
-                                        <div class="icon-rounded artboard">
-
-                                        </div>
-                                        <div class="box-title">
-                                            <a href="'#" title="">Multi-dispositivos</a>
-                                        </div>
-                                    </div><!-- /.box-header -->
-                                    <div class="box-content">
-                                        Usalo en tu laptop, tablet o celular, factura donde estes y en cualquier momento.
-                                    </div><!-- /.box-content -->
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.iconbox-item -->
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="iconbox-item">
-                                <div class="iconbox style1">
-                                    <div class="box-header">
-                                        <div class="icon-rounded global">
-
-                                        </div>
-                                        <div class="box-title">
-                                            <a href="'#" title="">A la medida</a>
-                                        </div>
-                                    </div><!-- /.box-header -->
-                                    <div class="box-content">
-                                        Si necesitas una solución específica contáctanos, seguro podemos ayudarte a mejorar tu proceso.
-                                    </div><!-- /.box-content -->
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.iconbox-item -->
-                        </div><!-- /.col-md-4 -->
-                    </div><!-- /.row -->
-
-                </div><!-- /.container -->
-            </section><!-- /.flat-row-iconbox -->
-
-            <section id="precios" class="flat-row pd-contact-v2">
-
-
-                <div class="container">
-                    <!--<div class="">-->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="title-section left">
-                                <h2>
-                                    Precios
-                                </h2>
-                            </div><!-- /.title-section -->
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row" ng-controller="preciosCtrl">
-                        <div class="form-group col-xs-12 col-sm-3 contact-info">
-                            ¿Cuántos timbres necesita?.
-                            <p>
-                                Compra mínima <b>{{chartPriceParams.compra_minima|number}}</b> timbres.
-                            </p>
-                            <form ng-submit="false" name="formTimbres" novalidate>
-                                <div ng-class="alertDangerClass(formTimbres, formTimbres.timbres)">
-                                    <label class="control-label" for="timbres">Cantidad:</label>
-                                    <div class="input-group">
-                                        <span class="input-group-addon btn btn-danger" ng-click="updateTimbres( - 1 * timbresStep)">
-                                            <i class="fa fa-minus-circle"></i></span>
-                                        <input type="number" class="form-control" 
-                                               ng-model-options="{debounce: 200}"
-                                               required="required" 
-                                               ng-model="paquete.cantidad" 
-                                               id="timbres"
-                                               min="{{chartPriceParams.compra_minima}}"
-                                               name="timbres"
-                                               autocomplete="off"
-                                               ng-change="updateChart()"
-                                               placeholder="Cantidad">
-                                            <span class="input-group-addon btn btn-success" ng-click="updateTimbres(timbresStep)">
-                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                            </span>
-
-                                    </div>
-                                    <div ng-show="formTimbres.$submitted || formTimbres.timbres.$touched" class="control-label">
-                                        <span ng-show="formTimbres.timbres.$error.required">Este campo es obligatorio.</span>
-                                        <span ng-show="formTimbres.timbres.$error.min">La compra minima es de <b>{{chartPriceParams.compra_minima}}</b> timbres.</span>
-                                    </div>
-                                </div>
-                                <br/>
-
-                                <div class="alert alert-success" role="alert" ng-show="formTimbres.timbres.$valid">
-                                    Subtotal: <b>{{total| currency:"$"}} MXN</b>
-                                    <br/>
-                                    IVA: <b>{{total * .16| currency:"$"}} MXN</b>
-                                    <br/>
-                                    Total a pagar:
-                                    <h2>
-                                        {{total * 1.16| currency:"$"}} MXN
-                                    </h2>
-                                </div>
-
-                            </form>
-
-                            <a href="https://app.facturabilidad.com/timbres/comprar" target="_blank" class="btn btn-success">
-                                Comprar timbres
-                            </a>
-                            <br/>
-                            <br/>
-                            <div class="info info-address">
-                                <div class="title">Timbres Gratis</div>
-                                <p>Recomienda la plataforma a tus conocidos 
-                                    y obtendrás timbres gratis cuando ellos usen sus timbres.</p>
-
-                                <a href="https://app.facturabilidad.com/timbres/gratis" target="_blank" class="btn btn-success">
-                                    Recomendar
-                                </a>
-                            </div>
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-8">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    Timbres:<b>{{(paquete.cantidad||0).toLocaleString()}}</b>; 
-                                    Precio por timbre:<b>{{precioPorVolumen(paquete.cantidad) | currency:"MXN $"}}</b>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas class="chart chart-bar" chart-data="chartData"
-                                            chart-labels="chartLabels"
-                                            chart-series="chartSeries" 
-                                            chart-options="chartOptions"
-                                            chart-dataset-override="datasetOverride"
-                                            chart-colors="chartColors"
-                                            chart-click="chartOnClick">
-                                    </canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--</div> /.row -->
-                </div><!-- /.container -->
-            </section><!-- /.flat-row-iconbox -->  
-
-
-
-
-
-
-            <footer id="footer">
-                <div class="footer-widgets">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="widget-infomation">
-                                    <ul class="infomation-footer">
-                                        <li>
-                                            <i class="fa fa-facebook" aria-hidden="true">
-                                            </i>
-                                            <a href="http://fb.me/facturabilidad" target="_blank" title="">@facturabilidad</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-comment" aria-hidden="true">
-                                            </i>
-                                            <a href="http://m.me/facturabilidad" target="_blank" title="">Messenger</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-twitter" aria-hidden="true">
-                                            </i>
-                                            <a href="https://twitter.com/facturabilidad" target="_blank" title="">@facturabilidad</a>
-                                        </li>
-                                    </ul><!-- /.infomation-footer -->
-                                </div><!-- /.widget-infomation -->
-                            </div><!-- /.col-md-12 -->
-                        </div><!-- /.row -->
-                        <!--                        <div class="row widget-box">
-                                                    <div class="col-md-4">
-                                                        <div class="widget widget-text">
-                                                            <p>Lorem ipsum dolor sit consectetur adipiscing elit sed
-                                                                do eiusmod tempor incididunt ut labore et dolore 
-                                                                magna veniam aliqua.Ut enim ad minim veniam
-                                                            </p>
-                                                            <p>
-                                                                Ut enim ad minim veniam, quis nostrud exercitation
-                                                                ullamco laboris nisi ut aliquip ex ea commodo
-                                                                consequat. Duis aute irure dolor in reprehenderit in
-                                                                voluptate 
-                                                            </p>	
-                                                        </div> /.widget-text 
-                                                    </div> /.col-md-4 
-                                                    <div class="col-md-4">
-                                                        <div class="widget widget-services">
-                                                            <ul class="one-half first">
-                                                                <li>
-                                                                    <a href="#" title="">About Us</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        Advertise
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">Terms & Conditions</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">Privacy Policy</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        Careers
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        Shop
-                                                                    </a>
-                                                                </li>
-                                                            </ul> /.one-half 
-                                                            <ul class="one-half">
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        Home
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        Testimonials
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        News
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">
-                                                                        Services
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" title="">Corporate Client</a>
-                                                                </li>
-                                                            </ul> /.one-half 
-                                                        </div> /.widget-services 
-                                                    </div> /.col-md-4 
-                                                    <div class="col-md-4">
-                                                        <div class="widget widget-subscribe">
-                                                            <div class="flat-questions">
-                                                                <a href="https://app.facturabilidad.com" title="" class="appointment">
-                                                                    Acceso a usuarios
-                                                                </a>
-                                                            </div> /.flat-questions 
-                                                        </div> /.widget-subscribe 
-                        
-                                                    </div> /.col-md-4 
-                                                </div> /.row .widget-box -->
-                    </div><!-- /.container -->
-                </div><!-- /.footer-widgets -->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>2018 Facturabilidad.com
-                                    </p>
-                                </div>
-                                <!--                                <ul class="menu-footer">
-                                                                    <li>
-                                                                        <a href="#" title="">
-                                                                            Home
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" title="">My Blog</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" title="">My Home</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" title="">Sample Page</a>
-                                                                    </li>
-                                                                </ul> /.menu-footer -->
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.footer-bottom -->
-            </footer><!-- /#footer -->
-            <div class="button-go-top">
-                <a href="#" title="" class="go-top">
-                    <i class="fa fa-chevron-up">
-                    </i>
-                </a>
             </div>
+        </nav>
+        <!-- end navigation panel -->
+        <!-- slider -->
+        <section id="slider" class="no-padding"> 
+            <div id="owl-demo" class="owl-carousel owl-theme owl-half-slider light-pagination square-pagination dark-pagination-without-next-prev-arrow corporate-slider">
+                <!-- slider item -->
+                <div class="item owl-bg-img" style="background-image:url('img/s1.webp');">
+                    <div class="opacity-header bg-dark-gray"></div>
+                    <div class="container position-relative">
+                        <div class="slider-typography text-center">
+                            <div class="slider-text-middle-main">
+                                <div class="slider-text-middle padding-left-right-px wow fadeIn">
+                                    <p class="text-small font-weight-600 text-uppercase white-text letter-spacing-7 margin-three no-margin-top bg-deep-red highlight-link-text xs-line-height-18">Conoce nuestra aplicación</p>
+                                    <h1 class="white-text font-weight-100 letter-spacing-2">Crea tu cuenta gratis<br class="xs-display-none"> y empieza a facturar de inmediato</h1>
+                                    <br>
+                                    <a class="text-small highlight-link text-uppercase bg-white black-text"
+                                       href="http://demo.facturabilidad.com/pruebas">
+                                        Demo <i class="fa fa-long-arrow-right extra-small-icon black-text"></i></a>
+                                    <br/>
+                                    <br/>
+                                    <a class="text-small highlight-link text-uppercase bg-dark-green white-text" 
+                                       href="https://app.facturabilidad.com">
+                                        Acceso <i class="fa fa-long-arrow-right extra-small-icon white-text"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
 
-            <a id="wa" href="https://wa.me/5212225853807" target="_blank">
-                <i class="fa fa-whatsapp fa-2x"></i>
-                Contáctanos
-            </a>
+
+            </div>
+        </section>
+        <!-- end slider -->
+
+        <!-- work process section -->
+        <section class="border-top corporate-standards no-padding-bottom" id="servicios">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 text-center corporate-slider sm-margin-bottom-seven">
+                        <span class="title-large text-uppercase font-weight-700 black-text letter-spacing-1">Descripción</span>
+                    </div>
+                    <!-- end section title -->
+                </div>
+            </div>
+            <div class="container-fluid margin-five no-margin-bottom no-padding">
+                <div class="row no-margin">
+                    <!-- tab -->
+                    <div class="col-md-12 col-sm-12 center-col text-center no-padding" id="animated-tab">
+                        <!-- tab navigation 
+                        <ul class="nav nav-tabs margin-five no-margin-top xs-margin-bottom-seven">
+                            <li class="nav active"><a href="#tab6_sec1" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-tools"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none">Servicio de  <br>facturación</span></li>
+                            
+                        </ul>
+                        <!-- end tab navigation -->
+                        <!-- tab content section -->
+                        <div class="tab-content">
+                            <!-- tab content -->
+                            <div id="tab6_sec1" class="text-center center-col tab-pane fade in active"> 
+                                <div class="tab-pane fade in"> 
+                                    <div class="col-lg-6 col-md-6 no-padding corporate-standards-img cover-background position-relative" style="background-image:url('img/services1.webp');">
+                                        <div class="opacity-medium bg-dark-gray"></div>
+                                        <p class="title-small text-uppercase corporate-standards-title white-text letter-spacing-7"><span class="title-extra-large no-letter-spacing deep-red-text"></span><br>Facturación </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 corporate-standards-text sm-margin-lr-four sm-margin-top-four xs-padding-tb-ten">
+                                        <div class="img-border-small-fix border-gray"></div>
+
+                                        <br><br>
+                                        <h1 class="margin-ten no-margin-bottom">Todo lo que necesitas</h1>
+                                        <p class="text-med margin-ten width-80 center-col xs-width-100">Timbra y administra todos tus documentos fiscales.
+                                            <br>
+                                            CFDI de Honorarios, Arrendamiento, Notas de credico, Complementos de pago, Nomina y mucho mas.
+                                            <br>
+                                            Crea facturas rapidamente administrando tus catalogos y haciendo uso de los catalogos del SAT facilmente.
+                                        </p>
+                                        <a class="text-small highlight-link text-uppercase bg-green black-text" href="https://app.facturabilidad.com">Acceso <i class="fa fa-long-arrow-right extra-small-icon black-text"></i></a>
 
 
-        </div> <!-- /.boxed -->
-
-        <!-- Javascript -->
-        <script type="text/javascript" src="javascript/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
-        <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-        <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="javascript/waypoints.min.js"></script>
-
-        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-        <script type="text/javascript" src="javascript/main.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
 
 
-        <!-- Revolution Slider -->
-        <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script type="text/javascript" src="revolution/js/slider_v1.js"></script>
 
-        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->    
-        <!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>-->
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+                        </div>
+                        <!-- end tab content section -->
+                    </div>
+                    <!-- end tab -->
+                </div>
+            </div>
+        </section>
+        <!-- end work process section -->
+
+        <!-- features section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- features item -->
+                    <div class="col-md-3 col-sm-6 sm-margin-bottom-ten xs-text-center">
+                        <span class="title-small text-uppercase font-weight-700 black-text letter-spacing-1 margin-seven display-block">Usabilidad</span>
+                        <p class="margin-ten no-margin-top width-90 xs-center-col xs-display-block">Diseñado para ser facil de utilizar, con catalogos que te permite una sencilla gestión de tu información y una facturación mas rapida.</p>
+
+                    </div>
+                    <!-- end features item -->
+                    <!-- features item -->
+                    <div class="col-md-3 col-sm-6 sm-margin-bottom-ten xs-text-center">
+                        <span class="title-small text-uppercase font-weight-700 black-text letter-spacing-1 margin-seven display-block">Soporte</span>
+                        <p class="margin-ten no-margin-top width-90 xs-center-col xs-display-block">Contamos con personal especializado en el uso de la herramienta y capaz de ayudarte a resolver cualquier problema.</p>
+
+                    </div>
+                    <!-- end features item -->
+                    <!-- features item -->
+                    <div class="col-md-3 col-sm-6 xs-margin-bottom-ten xs-text-center">
+                        <span class="title-small text-uppercase font-weight-700 black-text letter-spacing-1 margin-seven display-block">Seguridad</span>
+                        <p class="margin-ten no-margin-top width-90 xs-center-col xs-display-block">Tu información es muy valioza, por eso está resguardada con diferentes métodos de seguridad y disponible cuando la necesitas.</p>
+
+                    </div>
+                    <!-- end features item -->
+                    <!-- features item -->
+                    <div class="col-md-3 col-sm-6 xs-text-center">
+                        <span class="title-small text-uppercase font-weight-700 black-text letter-spacing-1 margin-seven display-block">A la medida</span>
+                        <p class="margin-ten no-margin-top width-90 xs-center-col xs-display-block">Tenemos un gran equipo de desarrollo en caso de que requieras hacer alguna integración o necesites funcionalidad especial.</p>
+
+                    </div>
+                    <!-- end features item -->
+                </div>
+            </div>
+        </section>
+        <!-- end features section -->
+
+        <!-- case study section -->
+
+
+
+
+        <!-- highlight section -->
+        <section class="no-padding" id="experiencia">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-7 no-padding">
+                        <div class="col-md-12 corporate-about-img cover-background" style="background-image:url('img/aboutus1.webp');"></div>
+                        <div class="col-md-12 corporate-about-text no-padding-bottom sm-margin-bottom-ten">
+
+
+                            <!-- text -->
+                            <div class="col-md-12 col-sm-12 md-full-width xs-no-padding">
+                                <span class="text-large xs-no-padding-left font-weight-700 black-text letter-spacing-1 margin-five no-margin-top display-block width-80">Actualizaciones constantes</span>
+                                <p class="text-med">Nos mantenemos al día, por eso te garantizamos que siempre podras cumplir con tus responsabilidades fiscales.
+                                    <br>
+                                    Ademas, siempre tomamos en cuenta las opiniones de nuestros clientes, esto nos permite mantenernos a la vanguardia y brindar un servicio facil de usar.</p>
+                                <div class="separator-line-thick bg-deep-red no-margin-bottom no-margin-lr xs-margin-top-four"></div>
+                                <span class="margin-ten-bottom display-none md-display-block xs-display-block clearfix"></span>
+                            </div>
+                            <!-- end text -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 no-padding">
+                        <div class="col-md-12 padding-seven corporate-about-text sm-margin-bottom-two">
+                            <div class="col-md-6 col-sm-6 padding-two-bottom md-full-width xs-no-padding">
+                                <div class="separator-line-thick bg-white no-margin-top no-margin-lr sm-margin-bottom-two"></div>
+                                <span class="title-extra-large black-text">Nuestra experiencia nos respalda.</span>
+                                <span class="margin-ten-bottom display-none md-display-block xs-display-block clearfix"></span>
+                            </div>
+                            <!-- text -->
+                            <div class="col-md-5 col-sm-6 padding-two-bottom pull-right md-full-width xs-no-float xs-no-padding">
+                                <div class="separator-line-thick bg-deep-red no-margin-top no-margin-lr sm-margin-bottom-two"></div>
+                                <span class="text-large xs-no-padding-left font-weight-700 black-text letter-spacing-1 margin-five no-margin-top display-block sm-margin-bottom-two">Tenemos mas de 10 años trabajando para las mejores empresas</span>
+                                <p class="text-med">Aprendiendo las mejores practicas contables para poder crear una gran herramienta.</p>
+                            </div>
+                            <!-- end text -->
+                        </div>
+                        <div class="col-md-12 corporate-about-img cover-background" style="background-image:url('img/aboutus2.webp');"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end highlight section -->
+
+        <!-- why choose us section -->
+        <section id="precios" class="fix-background" style="background-image:url('img/exp1.webp');">
+            <div class="opacity-full bg-deep-red"></div>
+            <div class="container position-relative">
+                <div class="row" ng-controller="preciosCtrl">
+                    <div class="col-md-4 col-sm-12 sm-margin-bottom-ten sm-text-center">
+                        <h3 class="title-large text-uppercase font-weight-700 letter-spacing-1 white-text">Todo a un gran precio</h3>
+                        <p class="text-med white-text margin-five">
+                            Sabemos que invertir en tecnologia no es sencillo,
+                            por eso damos precios muy accesibles y a la medida de tus necesidades.
+                            Ademas nuestros timbres no caducan, por lo que podras planear mejor tus compras para siempre obtener el mejor precio.</p>
+
+                        <br/>
+                        <h4 class="white-text font-weight-700">Timbres Gratis</h4>
+                        <p class="text-med white-text">
+                            Recomienda la plataforma a tus conocidos 
+                            y obtendrás timbres gratis cuando ellos usen sus timbres.
+                        </p>
+                        <a href="https://app.facturabilidad.com/timbres/gratis" target="_blank" 
+                           class="text-small highlight-link text-uppercase bg-dark-green white-text">
+                            Recomendar
+                            <i class="fa fa-long-arrow-right extra-small-icon white-text"></i>
+                        </a>
+                    </div>
+                    <div class="form-group col-md-6 col-md-offset-2 col-sm-12 text-center margin-three xs-margin-bottom-ten">
+                        <p class="white-text">
+                            ¿Cuántos timbres necesita?.
+                        <br/>
+                            Compra mínima <b>{{chartPriceParams.compra_minima|number}}</b> timbres.
+                        </p>
+                        <form ng-submit="false" name="formTimbres" novalidate>
+                            <div ng-class="alertDangerClass(formTimbres, formTimbres.timbres)">
+                                <label class="control-label white-text" for="timbres">Cantidad:</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon btn btn-danger" ng-click="updateTimbres(-1 * timbresStep)">
+                                        <i class="fa fa-minus-circle"></i></span>
+                                    <input type="number" class="form-control" 
+                                           ng-model-options="{debounce: 200}"
+                                           required="required" 
+                                           ng-model="paquete.cantidad" 
+                                           id="timbres"
+                                           min="{{chartPriceParams.compra_minima}}"
+                                           name="timbres"
+                                           autocomplete="off"
+                                           ng-change="updateChart()"
+                                           placeholder="Cantidad">
+                                    <span class="input-group-addon btn btn-success" ng-click="updateTimbres(timbresStep)">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                                <div ng-show="formTimbres.$submitted || formTimbres.timbres.$touched" class="control-label orange-text">
+                                    <span ng-show="formTimbres.timbres.$error.required">Este campo es obligatorio.</span>
+                                    <span ng-show="formTimbres.timbres.$error.min">La compra minima es de <b>{{chartPriceParams.compra_minima}}</b> timbres.</span>
+                                </div>
+                            </div>
+                            <br/>
+
+                            <div class="alert white-box" role="alert" ng-show="formTimbres.timbres.$valid">
+                                Subtotal: <b>{{total| currency:"$"}} MXN</b>
+                                <br/>
+                                IVA: <b>{{total * .16| currency:"$"}} MXN</b>
+                                <br/>
+                                Total a pagar:
+                                <h2>
+                                    {{total * 1.16| currency:"$"}} MXN
+                                </h2>
+                            </div>
+
+                        </form>
+
+                        <a class="text-small highlight-link text-uppercase bg-dark-green white-text" 
+                           href="https://app.facturabilidad.com/timbres/comprar">
+                            Comprar timbres
+                            <i class="fa fa-long-arrow-right extra-small-icon white-text"></i>
+                        </a>
+
+                        <br/>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end why choose us section -->
+
+        <section id="contact-form" class="wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <p class="text-med text-uppercase letter-spacing-1 black-text font-weight-600">Contacto</p>
+                        <p class="text-med">Si tienes alguna duda, algun comentario o cualquier tema en el que podamos ayudarte no dudes en contactarnos.</p>
+                        <p class="text-med">Puedes hacerlo a través de nuestro Whatsapp, redes sociales, numero telefonico o desde nuestro formulario de contacto. Siempre hay alguien queriendo saber de ti.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6  col-md-offset-2">
+                        <form id="contactusform" action="javascript:void(0)" method="post">
+                            <div id="success" class="no-margin-lr"></div>
+                            <input name="name" type="text" placeholder="Nombre" />
+                            <input name="email" type="text" placeholder="Telefono"  />
+                            <textarea placeholder="Comentario" name="message"></textarea>
+                            <button id="contact-us-button" type="submit" class="highlight-button-dark btn btn-small button xs-margin-bottom-five">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class=" bg-white footer-top">
+                <div class="container">
+                    <div class="row margin-four">
+                        <!-- phone -->
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">222-585-3807</h6></div>
+                        <!-- end phone -->
+                        <!-- address -->
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">Puebla, México</h6></div>
+                        <!-- end address -->
+                        <!-- email -->
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope small-icon black-text"></i><h6 class="margin-two no-margin-bottom"><a href="mailto:no-reply@domain.com" class="black-text">contacto@facturabilidad.com</a></h6></div>
+                        <!-- end email -->
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-middle">
+
+                <div class="row margin-four no-margin-bottom">
+                    <div class="col-md-6 col-sm-12 sm-text-center sm-margin-bottom-four portfolio-filter">
+                        <!-- link -->
+                        <ul class="list-inline footer-link text-uppercase">
+                            <li><a href="https://app.facturabilidad.com">Acceso</a></li>
+                            <li><a class="scrollto" data-filter="#servicios" href="#servicios">Descripción</a></li>
+                            <li><a class="scrollto" data-filter="#experiencia" href="#experiencia">Experiencia</a></li>
+                            <li><a class="scrollto" data-filter="#contact-form" href="#contact-form">Contacto</a></li>
+                        </ul>
+                        <!-- end link -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 footer-social text-right sm-text-center">
+                        <!-- social media link -->
+                        <a target="_blank" href="http://fb.me/facturabilidad"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/facturabilidad"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="https://wa.me/5212225853807"><i class="fa fa-whatsapp"></i></a>
+                        <!-- end social media link -->
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark-gray footer-bottom">
+                <div class="container">
+                    <div class="row margin-three">
+                        <!-- copyright -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                            &copy; 2019 Facturabilidad, powered by ZombIT.
+                        </div>
+                        <!-- end copyright -->
+                        <!-- logo -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
+                            <a href="http://zombit.mx" target="_blank"><img src="img/logoz.webp" alt=""/></a>
+                        </div>
+                        <!-- end logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- scroll to top --> 
+            <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a> 
+            <!-- scroll to top end... --> 
+        </footer>
+        <!-- end footer -->
+        <!-- javascript libraries / javascript files set #1 --> 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> 
+        <script type="text/javascript" src="js/smooth-scroll.js"></script>
+        <!-- jquery appear -->
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <!-- animation -->
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <!-- page scroll -->
+        <script type="text/javascript" src="js/page-scroll.js"></script>
+
+        <!--portfolio with shorting tab --> 
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script> 
+        <!-- owl slider  -->
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <!-- hamburger menu-->
+        <script type="text/javascript" src="js/classie.js"></script>
+        <script type="text/javascript" src="js/hamburger-menu.js"></script>
+        <!-- setting --> 
+        <script type="text/javascript" src="js/main.js"></script>
+
 
         <script type="text/javascript" src="bower_components/angular/angular.js?v=1.0.3"></script>
-        <script type="text/javascript" src="bower_components/chart.js/dist/Chart.min.js?v=1.0.3"></script>
-        <script type="text/javascript" src="bower_components/angular-chart.js/dist/angular-chart.min.js?v=1.0.3"></script>
         <script type="text/javascript" src="javascript/ng/ngApp.js?v=1.0.3"></script>
         <script type="text/javascript" src="javascript/ng/preciosCtrl.js?v=1.0.3"></script>
 
-        <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-//                                            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-//                                            (function () {
-//                                            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-//                                            s1.async = true;
-//                                            s1.src = 'https://embed.tawk.to/5890f57d9bfea509f7d18f00/default';
-//                                            s1.charset = 'UTF-8';
-//                                            s1.setAttribute('crossorigin', '*');
-//                                            s0.parentNode.insertBefore(s1, s0);
-//                                            })();
-        </script>
-        <!--End of Tawk.to Script-->
+        <!-- animation --> 
+        <!--<link rel="stylesheet" href="css/animate.css" />-->
+        <!-- bootstrap --> 
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <!-- et line icon --> 
+        <link rel="stylesheet" href="css/et-line-icons.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- revolution slider -->
+        <link rel="stylesheet" href="css/extralayers.css" />
+        <link rel="stylesheet" href="css/settings.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.css" />
+        <link rel="stylesheet" href="css/owl.transitions.css" />
+        <link rel="stylesheet" href="css/full-slider.css" />
+        <!-- text animation -->
+        <link rel="stylesheet" href="css/text-effect.css" />
+        <!-- hamburger menu  -->
+        <link rel="stylesheet" href="css/menu-hamburger.css" />
+        <!-- common -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/mystyle.css" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59907422-7"></script>
-        <script>
-                                                window.dataLayer = window.dataLayer || [];
-                                                function gtag(){dataLayer.push(arguments); }
-                                                gtag('js', new Date());
-                                                gtag('config', 'UA-59907422-7');
-        </script>
-
-
-    </body>
+        <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.css"/>
+        <!--[if IE]>
+            <link rel="stylesheet" href="css/style-ie.css" />
+        <![endif]-->
+        <!--[if IE]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
 </html>
